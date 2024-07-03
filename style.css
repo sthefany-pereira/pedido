@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: "Playwrite GB S", cursive;
+    color: white;
+}
+
+.box-degrade {
+    font-size: 30px;
+    width: 100%;
+    padding: 700px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(to right, #9600FF, #BB73E0, #FF8DDB, #F6E6BC);
+    background-size: 500% 100%;
+    animation: degrade-animado 5s infinite alternate;
+}
+
+@keyframes degrade-animado {
+    0%{
+        background-position-x: 0%;
+    }
+    100%{
+        background-position-x: 100%;
+    }
+}
+
+.botao {
+    margin-top: 1em;
+    background-color: transparent;
+    color: #850F8D;
+    width: 400px;
+    height: 50px;
+    border: 2px solid #850F8D;
+    border-radius: 30px;
+    text-align: center;
+    font-family: "Playwrite GB S", cursive;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.hamister {
+    margin-top: 3em;
+}
